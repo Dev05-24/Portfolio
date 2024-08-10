@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Main container -->
+    <div class="container">
+      <!-- container for navbar -->
+      <div class="first-cont" id="intro">
+        <div class="nav-cont">
+          <div class="nav-list">
+            <ul>
+              <a href="#intro" target="active"><li>Home</li></a>
+              <a href="#skills"><li>About</li></a>
+              <a href="#projects"><li>Projects</li></a>
+              <a href="#contact"><li>Contact</li></a>
+            </ul>
+          </div>
+          <div class="nav-link">
+            <a href="http://www.linkedin.com/in/devashish-kunwar-533895177"
+              ><img src="./image/linkedin.svg" alt="" width="35"
+            /></a>
+            <a href="https://github.com/Dev09-24"
+              ><img src="./image/git.svg" alt="" width="35"
+            /></a>
+            <a href=""><img src="./image/phone.svg" alt="" width="35" /></a>
+          </div>
+        </div>
+      </div>
+      <!-- Container for remaining content -->
+      <div class="second-cont">
+        <!-- container for introduction -->
+        <div class="sec-intro bg">
+          <!-- div for header about me -->
+          <div class="sec-intro-head">
+            <h1>Nice to meet you! I'm Devashish Kunwar</h1>
+            <h2> I'm a front-end developer passionate about building accessible web apps that users love.</h2>
+          </div>
+          <!-- div for my image -->
+          <div class="sec-intro-img">
+            <img
+              src="./image/imgnew.png"
+              alt=""
+              height="100"
+              width="100"
+            />
+          </div>
+        </div>
+
+        <!-- Container for my skills -->
+        <div class="sec-cont-skills bg" id="skills">
+          <div class="skills-head">
+            <h1 class="title-size">My skills</h1>
+          </div>
+          <div class="skills-image">
+            <img src="./image/html2.png" alt="html" />
+            <img src="./image/css.png" alt="css" />
+            <img src="./image/js.webp" alt="js" />
+            <img src="./image/reactjs.png" alt="react" />
+            <img src="./image/bootstrap.webp" alt="bootstrap" />
+          </div>
+        </div>
+
+        <!-- container for my projects -->
+        <div class="sec-project bg" id="projects">
+          <div class="sec-proj-head"><h1 class="title-size">My Projects</h1></div>
+          <div class="sec-proj-card">
+          <div class="p1 pro-p">
+            <img src="./image/bg-1.jpg" alt="Avatar" height="150" width="200" />
+            <div class="card-content">
+              <h4><b>John Doe</b></h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum commodi autem optio non ad nesciunt sunt nobis! Nostrum possimus molestiae maxime asperiores aliquid!</p>
+            </div>
+          </div>
+          <div class="p2 pro-p">
+            <img src="./image/bg-1.jpg" alt="Avatar" height="150" width="200" />
+            <div class="card-content">
+              <h4><b>John Doe</b></h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum commodi autem optio non ad nesciunt sunt nobis! Nostrum possimus molestiae maxime asperiores aliquid!</p>
+            </div>
+          </div>
+          <div class="p3 pro-p">
+            <img src="./image/bg-1.jpg" alt="Avatar" height="150" width="200" />
+            <div class="card-content">
+              <h4><b>John Doe</b></h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum commodi autem optio non ad nesciunt sunt nobis! Nostrum possimus molestiae maxime asperiores aliquid!</p>
+            </div>
+          </div>
+          <div class="p4 pro-p">
+            <img src="./image/bg-1.jpg" alt="Avatar" height="150" width="200" />
+            <div class="card-content">
+              <h4><b>John Doe</b></h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum commodi autem optio non ad nesciunt sunt nobis! Nostrum possimus molestiae maxime asperiores aliquid!</p>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <!-- Container to contact me -->
+         <div class="sec-contact bg" id="contact">
+          <div class="sec-cont-head">
+            <h1 class="title-size">Contact Me</h1>
+          </div>
+          <div class="sec-cont-form">
+            <form action="action_page.php">
+              <label for="fname">Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your email...">
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <div class="btn"><input type="submit" value="Submit" class="form-btn"></div>
+          
+            </form>
+          </div>
+         </div>
+      </div>
+    </div>
+  </body>
+</html>

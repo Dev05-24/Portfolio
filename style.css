@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@400..700&family=Kalnia+Glaze:wght@100..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 10%;
+}
+body{
+    color: black;
+    /* background: linear-gradient(26deg, #fff8f8, #000000); */
+}
+/* Main container */
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* height: 1200px; */
+    /* background-color: black; */
+}
+
+/* This is my navbar */
+.first-cont{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    background-color: #2C394B;
+    justify-content: center;
+    align-items: center;
+}
+.nav-cont{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+}
+.nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    gap: 3rem;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.nav-list a{
+    display: flex;
+    flex-direction: row;
+    height: 17vh;
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
+    animation: slideright 1s ease forwards;
+    font-style: italic;
+}
+@keyframes slideright{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.nav-list a:hover{
+    display: flex;
+    flex-direction: row;
+    height: 17vh;
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: bolder;
+    font-size: 22px;
+    color: white;
+    /* background-color: aqua; */
+    /* filter: drop-shadow(10px 15px rgb(0, 0, 0), -10px -15px rgb(0,0,0)); */
+    filter: drop-shadow(10px 10px 2px black);
+}
+.nav-link{
+    height: 21vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+
+}
+.bg{
+    margin: 0px auto;
+    /* background-color: rgb(98, 98, 98); */
+    background-color: #334756;
+    box-shadow: 0px 0px 50px black;
+    border-radius: 5px;
+}
+/* Media queries fo navbar */
+@media (max-width:1000px) {
+    .container{
+        flex-direction: column;
+    }
+    .first-cont{
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-cont{
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: 11vh;
+        background-color: #2C394B;
+        margin-bottom: 10px;
+    }
+    .nav-link{
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 20%;
+        /* background-color: green; */
+        height: 15vh;
+    }
+    .nav-list{
+        width: 80%;
+        /* background-color: red; */
+        height: 15vh;
+        margin-top: 0px;
+    }
+    .nav-list ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 80%;
+    }
+    .nav-list a{
+        align-items: center;
+    }
+    .bg{
+        margin-top: 15%;
+    }
+
+}
+/* This is my whole content apart from navbar*/
+.second-cont{
+ /* background-color: aqua; */
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ /* gap: 6rem; */
+ width: 90%;
+ height: 400vh;
+ background-color: #082032;
+}
+
+/* section for introduction */
+.sec-intro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    /* width: 100%; */
+    height: 70vh;
+    width: 85%;
+    /* background-color: orange; */
+    /* animation: slidetop 1s ease forwards; */
+}
+.sec-intro-head{
+    display: flex;
+    flex-direction: column;
+    width: 44%;
+    gap: 40px;
+}
+@keyframes slidemove{
+    0%{
+        opacity: 0;
+        /* transform: translateX(100px); */
+        transform: rotateX(90deg);
+    }
+    100%{
+        opacity: 1;
+        transform: rotateX(0deg);
+        /* transform: translateX(0px); */
+    }
+}
+.sec-intro h1{
+    font-size: 4rem;
+    animation: slidemove 1s ease forwards;
+    font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+@keyframes slidetop{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.sec-intro h2{
+    font-size: 25px;
+    animation: slidetop 1s ease forwards;
+}
+.sec-intro-img img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+/* Media queries for intro section */
+@media (max-width:1410px) {
+    .sec-intro h1{
+        font-size: 3rem;
+    } 
+    .second-cont{
+        width: 100%;
+    }
+}
+
+/* section for skills */
+.sec-cont-skills{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    /* background-color: antiquewhite; */
+    text-align: center;
+    height: 60vh;
+    justify-content: space-evenly;
+    /* background-color: green; */
+}
+.sec-cont-skills h1{
+    text-align: center;
+    font-size: 3rem;
+}
+.skills-image{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    animation: slideright 1s ease forwards;
+}
+.skills-image img{
+    height: 150px;
+    width: 150px;
+}
+
+/* Media queries for skills */
+@media (max-width:1060px) {
+    .skills-image{
+        flex-wrap: wrap;
+        gap: 30px;
+    } 
+    .sec-cont-skills{
+        height: 75vh;
+    } 
+    .second-cont{
+        width: 100%;
+    }
+}
+
+/* Project container */
+.sec-project{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: 80vh;
+    /*padding: 10px;
+    gap: 10px; */
+}
+.sec-proj-head{
+    text-align: center;
+}
+.sec-proj-card{
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    flex-wrap: wrap;
+    padding: 50px;
+    gap: 10px;
+}
+.pro-p{
+    height: 200px;
+    width: 100%;
+    background-color: #194b72;
+    flex-basis: 35%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 23px;
+}
+.card-content{
+    align-items: center;
+    height: 150px;
+}
+.pro-p img{
+    border-radius: 15%;
+}
+
+/* Media queries for project */
+@media (max-width:1200px) {
+    .pro-p{
+        flex-direction: column;
+        height: 250px;
+    } 
+    .sec-project{
+        height: 90vh;
+    }
+    .second-cont{
+        width: 100%;
+    }
+}
+@media (max-width:850px) {
+    .pro-p{
+        flex-direction: column;
+        height: 307px;
+        flex-basis: 80%;
+        justify-content: space-around;
+    } 
+    .sec-project{
+        height: 200vh;
+    }
+    .second-cont{
+        width: 100%;
+        height: 550vh;
+    }
+}
+@media (max-width:650px) {
+    .second-cont{
+        height: 550vh;
+    }
+    .pro-p{
+        flex-direction: column;
+        height: 260px;
+    } 
+    .sec-project{
+        height: 170vh;
+    }
+    .second-cont{
+        width: 100%;
+    }
+    .sec-intro h1{
+        font-size: 3rem;
+    }
+}
+
+
+/* Contact form */
+.sec-contact{
+    display: flex;
+    flex-direction: column;
+    height: 82vh;
+    width: 85%;
+    gap: 60px;
+    align-items: center;
+}
+.sec-cont-form{
+    display: flex;
+    flex-direction: column;
+    height: 25vh;
+    width: 50%;
+    font-weight: bold;
+}
+input[type=text],input[type=email], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+    margin: 10px auto;
+}
+.form-btn{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #000000;
+    color: #9e9e9e;
+    font-weight: bold;
+    width: 100%;
+}
+.btn{
+    margin: 0;
+    position: absolute;
+    left: 52%;
+}
+.form-btn:hover{
+    padding: 10px;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+form label{
+    font-size: 19px;
+}
+
+.title-size{
+    font-size: 3rem;
+    text-align: center;
+}
+
+/* Media queries for contact*/
+@media (max-width:1000px) {
+    .btn{
+        left: 48%;
+    }
+}
